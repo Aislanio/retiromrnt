@@ -99,7 +99,8 @@ article{
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     color: white;
 }
-.loca h2{
+article h2{
+  color: white;
     font-size: 4em;
     font-family: "League Gothic", Sans-serif;
 }
@@ -110,11 +111,25 @@ article{
     font-family: "League Gothic", Sans-serif;
 }
 
+#filosofia{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5vh;
+
+  background-image: url(img/fundoMRNT.png);
+
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*Cards */
 
 .hero-section{
     align-items: flex-start;
-    background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+    background-image: linear-gradient(15deg, #7f2606 0%, #a53d17 150%);
     display: flex;
     min-height: 100%;
     justify-content: center;
@@ -212,7 +227,15 @@ article{
     min-height: 100vh;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   }
-  
+  .carrosel .titleh2{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-size: 2.7em;
+    
+    left: 8vh;
+    top: 2vh;
+  }
   .item {
     width: 200px;
     height: 300px;
@@ -265,6 +288,7 @@ article{
       line-height: 1.7;
       margin: 1rem 0 1.5rem;
       font-size: 0.8rem;
+      width: 33vh;
     }
   
     & button {
@@ -376,6 +400,7 @@ footer{
   display: flex;
   justify-content: center;
   margin-bottom: 5vh;
+  align-items: center;
 }
 
 .social-icons a {
@@ -399,10 +424,59 @@ footer{
 }
 
 
-
-
 @media (max-width: 698px){
-  .loca h2{
-    font-size: 2.5em;
+  .aviso{
+    min-width: 93vh !important;
   }
+  iframe{
+    width: 100%;
+  }
+  .loca h2{
+    font-size: 2.3em;
+  }
+}
+
+
+.container {
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-image: url(img/fundo.jpg);
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+.aviso {
+  min-width: 110vh;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #fffbe6;
+  border-left: 5px solid #ffcc00;
+  cursor:pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.aviso:hover{
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.507);
+  transform: translateY(-5px);
+
+
+
+}
+
+.gmail{
+  width: 100%;
+  max-width: 9vh;
+}
+
+iframe{
+  width: 68%;
+    height: 78vh;
 }
